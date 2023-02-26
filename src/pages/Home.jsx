@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import Header from "../components/Header";
+import NavBar from "../components/NavBar";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
         </button>
       </header> */}
 
-      <div className="mt-[70px] sm:mt-[100px] flex flex-col items-center h-full relative sm:static">
+      <div className="mt-[70px] sm:mt-[70px] flex flex-col items-center h-full relative sm:static">
         <h2 className="text-center font-[600] text-[52px] sm:text-[56px] max-w-[630px]">Hi, I'm Hikmot Okunola, a frontend engineer.</h2>
         {/* <h2 className="text-center font-[600] text-[52px] sm:text-[56px]">a frontend engineer</h2> */}
         <p className="mt-[20px] text-center max-w-[550px]">
@@ -27,6 +28,9 @@ const Home = () => {
             <Link to='/about' className="">About</Link>
             <Link to='/contact' className="">Contact</Link>
         </div>
+        {/* <div className="w-full fixed bottom-[50px] flex items-center justify-center">
+        <NavBar />
+      </div> */}
       </div>
     </section>
   );

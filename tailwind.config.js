@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"], 
   theme: {
-    extend: {},
+    extend: {
+      visibility: ["group-hover"]
+    },
+    backgroundImage: {
+      'first': "url('/src/assets/Screenshot.png')"
+    }
   },
   plugins: [],
 }
