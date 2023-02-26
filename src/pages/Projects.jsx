@@ -10,7 +10,7 @@ const Projects = () => {
 
       <h3 className="font-[600] text-center text-[52px] pb-20">Projects</h3>
 
-      <div className=" grid grid-cols-2 gap-[15px]">
+      <div className="grid-cols-1 grid sm:grid-cols-2 gap-[15px]">
         <div className="group project_card">
           <div className="flex items-center gap-2.5 invisible group-hover:visible">
             <div className="Tools_card  ">Django</div>
@@ -26,7 +26,7 @@ const Projects = () => {
             </p>
           </div>
         </div>
-        <div className="group project_card translate-y-[70px]">
+        <div className="group project_card sm:translate-y-[70px]">
           <div className="flex items-center gap-2.5 invisible group-hover:visible">
             <div className="Tools_card  ">Django</div>
             <div className="Tools_card">TailwindCss</div>
@@ -56,7 +56,7 @@ const Projects = () => {
             </p>
           </div>
         </div>
-        <div className="transition-all duration-[.1s] group project_card translate-y-[70px]">
+        <div className="transition-all duration-[.1s] group project_card sm:translate-y-[70px]">
           <div className="transition-all duration-[.1s] flex items-center gap-2.5 invisible group-hover:visible">
             <div className="Tools_card  ">Django</div>
             <div className="Tools_card">TailwindCss</div>
@@ -74,7 +74,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="w-max fixed right-[30px] bottom-[50px] flex items-center justify-center">
+      <div className="w-[calc(100%-60px)] fixed bottom-[50px] flex items-center justify-center">
         <NavBar />
       </div>
     </section>
