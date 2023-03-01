@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import Header from "../components/Header";
 
 const Contact = () => {
   return (
-    <section className="px-[30px] pt-10 overflow-y-auto">
+    <section className=" h-screen bg-fuchsia-100 px-[30px] pt-10 overflow-y-auto">
       <Header />
 
       <div className="mt-[30px] sm:mt-[100px] grid grid-cols-1 sm:grid-cols-2 gap-y-[50px] sm:gap-x-[50px]">

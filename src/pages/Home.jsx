@@ -5,7 +5,9 @@ import NavBar from "../components/NavBar";
 
 const Home = () => {
   return (
-    <section className="pt-[30px] pb-[50px] only:sm:pt-10 p-5 flex flex-col items-center h-screen overflow-y-scroll w-full ">
+    <section className="relative pt-[30px] pb-[50px] only:sm:pt-10 p-5 flex flex-col items-center h-screen overflow-y-scroll w-full ">
+      <div className="animate-blob_1  absolute w-[500px] h-[500px] top-[100px] filter blur-3xl left-10 mix-blend-multiply bg-green-400 rounded-full "></div>
+      <div className="animate-blob  absolute w-[500px] h-[500px] top-[100px] filter blur-3xl right-10 mix-blend-multiply bg-blue-300 rounded-full "></div>
       <Header />
       {/* <header className="w-full flex justify-between items-center">
         <h3 className="color-white">h!</h3>
@@ -22,7 +24,7 @@ const Home = () => {
           technology. I am interested in user experience, accessibility and web
           animations.
         </p>
-        <div className="absolute sm:static bottom-0  sm:mt-[150px] bg-slate-200 flex justify-center gap-12 items-center p-3 rounded-[16px]">
+        <div className="z-[10] absolute sm:static bottom-0  sm:mt-[150px] bg-slate-200 flex justify-center gap-12 items-center p-3 rounded-[16px]">
             <Link to='/home' className="bg-white px-[8px] py-[6px] text-center rounded-[14px]">Home</Link>
             <Link to='/projects' className="">Projects</Link>
             <Link to='/about' className="">About</Link>

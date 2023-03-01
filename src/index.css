@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .animation-delay-200{
+        animation-delay: 2s;
+    }
+    .animation-delay-400{
+        animation-delay: 4s;
+    }
+}
+
 .Tools_card {
   @apply border-white flex items-center justify-center border-[1px] rounded-[12px] py-[4px] px-[8px] leading-none text-[15px];
 }
