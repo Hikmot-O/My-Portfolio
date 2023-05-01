@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <section className="bg-fuchsia-100 relative pt-[30px] pb-[50px] only:sm:pt-10 p-5 flex flex-col items-center h-screen overflow-y-scroll w-full ">
       <div className="animate-blob_1  absolute w-[500px] h-[100%] top-[100px] filter blur-3xl left-10 mix-blend-multiply bg-purple-300 rounded-full "></div>
-      <div className="animate-blob  absolute w-[500px] h-[100%] top-[100px] filter blur-3xl right-10 mix-blend-multiply bg-pink-300 rounded-full "></div>
+      <div className="animate-blob absolute w-[500px] h-[100%] top-[100px] filter blur-3xl right-10 mix-blend-multiply bg-pink-300 rounded-full "></div>
       <Header />
       {/* <header className="w-full flex justify-between items-center">
         <h3 className="color-white">h!</h3>

@@ -22,7 +22,7 @@ const NavBar = () => {
             : ""
         }
       >
-        Projects
+        Work
       </NavLink>
       <NavLink
         to="/about"
