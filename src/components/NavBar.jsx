@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div className=" bg-slate-200 flex justify-center gap-12 items-center p-3 rounded-[16px]">
+    <nav className=" bg-slate-200 flex justify-center gap-12 items-center p-3 rounded-[16px]">
       <NavLink
         to="/"
         className={({ isActive }) =>
@@ -22,7 +22,7 @@ const NavBar = () => {
             : ""
         }
       >
-        Work
+        Projects
       </NavLink>
       <NavLink
         to="/about"
@@ -44,7 +44,7 @@ const NavBar = () => {
       >
         Contact
       </NavLink>
-    </div>
+    </nav>
   );
 };
 

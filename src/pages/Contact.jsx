@@ -4,15 +4,15 @@ import Header from "../components/Header";
 
 const Contact = () => {
   return (
-    <section className=" h-screen bg-fuchsia-100 px-[30px] pt-10 overflow-y-auto">
-      <div className="flex flex-col sm:flex-row absolute">
-        <div className="animate-blob_1 h-[50px]  w-[100px] sm:w-[500px] sm:h-[100%] top-[100px] filter blur-3xl left-10 mix-blend-multiply bg-purple-300 rounded-full "></div>
-        <div className="animate-blob h-[50px]   w-[100px] sm:w-[500px] sm:h-[100%] top-[100px] filter blur-3xl right-10 mix-blend-multiply bg-pink-300 rounded-full "></div>
-      </div>
+    <section className="h-screen bg-fuchsia-100 px-[30px] pt-10">
+      {/* <div className="flex flex-col sm:flex-row absolute"> */}
+      {/* <div className="animate-blob_1  absolute w-[200px] h-[200px] md:w-[400px] md:h-[400px] top-[100px] filter blur-3xl left-10 mix-blend-multiply bg-purple-300 rounded-full "></div> */}
+      {/* <div className="animate-blob absolute w-[200px] h-[200px] md:w-[400px] md:h-[400px] top-[100px] filter blur-3xl right-10 mix-blend-multiply bg-pink-300 rounded-full "></div> */}
+      {/* </div> */}
       <Header />
 
       <div className="mt-[30px] sm:mt-[100px] grid grid-cols-1 sm:grid-cols-2 gap-y-[50px] sm:gap-x-[50px]">
-        <h4 className="font-[600] text-[45px] leading-[50px]">
+        <h4 className="font-[600] text-2xl md:text-[45px] md:leading-[50px]">
           Have an idea or concept that really excites you? Let's make magic
           together!
         </h4>
@@ -61,7 +61,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="w-[calc(100%-60px)] fixed bottom-[25px] flex items-center justify-center">
+      <div className=" w-screen fixed bottom-[50px] flex items-center justify-center">
         <NavBar />
       </div>
     </section>

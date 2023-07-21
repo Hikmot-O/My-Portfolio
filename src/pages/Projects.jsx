@@ -6,11 +6,11 @@ import { icon } from "@fortawesome/fontawesome-svg-core";
 import { Icon } from "@fortawesome/fontawesome-svg-core";
 import Header from "../components/Header";
 import NavBar from "../components/NavBar";
-import test from "../assets/Screenshot.png";
+// import test from "../assets/Screenshot.png";
 
 const Projects = () => {
   return (
-    <section className=" pt-10 overflow-hidden bg-fuchsia-100">
+    <section className=" pt-10 h-screen overflow-y-scroll bg-fuchsia-100">
       <div className="px-5">
         <Header />
       </div>
@@ -21,12 +21,14 @@ const Projects = () => {
         <div className="group project_card">
           <p className="text-white font-[600] text-3xl mb-2">Awaskill</p>
           <p className="uppercase text-xs">Next js + Framer motion</p>
-          <p className="text-sm mt-4 text-[#777778]">Figure out your ideal role in the world of tech</p>
+          <p className="text-sm mt-4 text-[#777778]">
+            Figure out your ideal role in the world of tech
+          </p>
           <div className="mt-20 flex items-center gap-3">
             <div className="text-sm">Live</div>
             <div className="flex">
-            <FontAwesomeIcon icon="fa-solid fa-code-branch" />
-             <p className="text-sm">Code</p> 
+              <FontAwesomeIcon icon="fa-solid fa-code-branch" />
+              <p className="text-sm">Code</p>
             </div>
           </div>
           {/* <div className="flex items-center gap-2.5 invisible group-hover:visible">
@@ -58,7 +60,7 @@ const Projects = () => {
             </p>
           </div> */}
         </div>
-        <div className="group project_card">
+        <div className="z-1 group project_card">
           {/* <div className="flex items-center gap-2.5 invisible group-hover:visible">
             <div className="Tools_card  ">Django</div>
             <div className="Tools_card">TailwindCss</div>
@@ -73,7 +75,7 @@ const Projects = () => {
             </p>
           </div> */}
         </div>
-        <div className="transition-all duration-[.1s] group project_card sm:translate-y-[70px]">
+        <div className="z-1 transition-all duration-[.1s] group project_card sm:translate-y-[70px]">
           {/* <div className="transition-all duration-[.1s] flex items-center gap-2.5 invisible group-hover:visible">
             <div className="Tools_card  ">Django</div>
             <div className="Tools_card">TailwindCss</div>
@@ -91,7 +93,7 @@ const Projects = () => {
           </div> */}
         </div>
       </div>
-      <div className="w-[calc(100%-60px)]fixed bottom-[50px] flex items-center justify-center">
+      <div className=" w-screen fixed bottom-[50px] flex items-center justify-center">
         <NavBar />
       </div>
     </section>
