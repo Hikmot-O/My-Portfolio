@@ -18,8 +18,8 @@ const Home = () => {
 
       <div className="mt-[160px] sm:mt-[70px] flex flex-col items-center h-screen relative sm:static">
       {/* Okunola, a frontend engineer. */}
-        <h2 className="text-center font-[600] text-[36px] sm:text-[56px] md:max-w-[630px]">Hi, I'm Hikmot.</h2>
-        <h2 className="text-center font-[600] text-[36px] sm:text-[56px]">A frontend engineer.</h2>
+        <h2 className="text-center font-[500] text-[36px] sm:text-[56px] md:max-w-[630px]">Hi, I'm Hikmot.</h2>
+        <h2 className="text-center font-[500] text-[36px] sm:text-[56px]">A frontend engineer.</h2>
         <p className="mt-[20px] text-center max-w-[550px]">
           I build scalable and reliable web applications using frontend
           technology. I am interested in user experience, accessibility and web
