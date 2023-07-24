@@ -5,14 +5,14 @@ import NavBar from "../components/NavBar";
 const About = () => {
   return (
     <section className=" bg-fuchsia-100  flex flex-col items-center w-sreen h-screen overflow-y-auto">
-      <div className="w-full px-[30px] pt-10">
+      <div className="w-full px-5 pt-[30px] md:pt-10">
         <Header />
       </div>
-      <div className="pt-[90px] px-5 md:px-0 pb-16 md:flex items-center justify-center gap-4 w-full border-b-[1px] border-b-[#7d8487] ">
+      <div className="pt-[90px] px-5 md:px-0 pb-16 md:flex items-center justify-center md:gap-4 w-full border-b-[1px] border-b-[#7d8487] ">
         {/* hero left */}
-        <div className="w-[380px]">
-          <h5 className=" text-lg ">HEY THERE!</h5>
-          <p className="text-[44px] font-[600]">
+        <div className="md:w-[380px] mb-12 sm:mb-12">
+          <h5 className="text-[17px]] sm:text-3xl md:text-lg mb-3 sm:mb-2">HEY THERE!</h5>
+          <p className="text-4xl w-[380px] leading-[50px] sm:leading-[90px] sm:w-full sm:text-6xl md:text-[44px] font-[600]">
             Frontend Engineer & Technical Writer
           </p>
         </div>
@@ -20,7 +20,7 @@ const About = () => {
         <div className="h-[532px] sm:h-[700px] md:w-[300px] md:h-[360px] rounded-3xl bg-black"></div>
       </div>
 
-      <div className="text-[17px] px-5 md:px-0 py-12 flex flex-col gap-[4rem] items-center">
+      <div className="text-[17px] md:text-[17px] sm:text-2xl px-5 md:px-0 py-12 flex flex-col gap-[4rem] items-center">
         <p className="text-black md:w-[720px] font-[400]">
           I'm Hikmot, a frontend engineer and an aspiring technical writer based in Ibadan, Nigeria. with over two years of experience and
           a background in marketing and consumer psychology. I have designed for

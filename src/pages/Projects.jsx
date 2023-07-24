@@ -10,7 +10,7 @@ import NavBar from "../components/NavBar";
 
 const Projects = () => {
   return (
-    <section className=" pt-10 h-screen overflow-y-scroll bg-fuchsia-100">
+    <section className=" pt-[30px] md:pt-10 h-screen overflow-y-scroll bg-fuchsia-100">
       <div className="px-5">
         <Header />
       </div>
