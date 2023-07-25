@@ -5,7 +5,7 @@ import NavBar from "../components/NavBar";
 
 const Home = () => {
   return (
-    <section className="bg-fuchsia-100 pt-[30px] only:sm:pt-10 p-5 flex flex-col items-center h-screen">
+    <section className="bg-fuchsia-100 pt-[30px] only:sm:pt-10 p-5 flex flex-col items-center h-screen overflow-y-scroll">
       {/* <div className="animate-blob_1  absolute w-[200px] h-[200px] md:w-[400px] md:h-[400px] top-[100px] filter blur-3xl left-10 mix-blend-multiply bg-purple-300 rounded-full "></div>
       <div className="animate-blob absolute w-[200px] h-[200px] md:w-[400px] md:h-[400px] top-[100px] filter blur-3xl right-10 mix-blend-multiply bg-pink-300 rounded-full "></div> */}
       <Header />

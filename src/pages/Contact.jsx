@@ -4,7 +4,7 @@ import Header from "../components/Header";
 
 const Contact = () => {
   return (
-    <section className="h-screen bg-fuchsia-100 pt-[30px] md:pt-10">
+    <section className="h-screen overflow-y-scroll bg-fuchsia-100 pt-[30px] md:pt-10">
       {/* <div className="flex flex-col sm:flex-row absolute"> */}
       {/* <div className="animate-blob_1  absolute w-[200px] h-[200px] md:w-[400px] md:h-[400px] top-[100px] filter blur-3xl left-10 mix-blend-multiply bg-purple-300 rounded-full "></div> */}
       {/* <div className="animate-blob absolute w-[200px] h-[200px] md:w-[400px] md:h-[400px] top-[100px] filter blur-3xl right-10 mix-blend-multiply bg-pink-300 rounded-full "></div> */}
