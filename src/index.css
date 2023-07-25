@@ -22,11 +22,11 @@
   @apply invisible group-hover:visible cursor-pointer border-[1px] border-white rounded-[22px] leading-none flex items-center justify-center py-3 px-[15px] absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] text-[30px] bg-white bg-opacity-10;
 }
 .contact_label {
-  @apply  mb-2.5 sm:mb-5 font-[600] md:text-[18px];
+  @apply  mb-2 sm:mb-5 font-[600] md:text-[18px];
 }
 .contact_main {
   @apply cursor-pointer font-[600] text-[20px] md:text-[28px];
 }
 .social_links {
-  @apply border-b-black border-b-[3px] cursor-pointer;
+  @apply font-[600] border-b-black border-b-2 md:border-b-[3px] cursor-pointer;
 }
