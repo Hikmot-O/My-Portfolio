@@ -25,22 +25,19 @@ const About = () => {
           I'm Hikmot, a frontend engineer and an aspiring technical writer based in Ibadan, Nigeria. with over two years of experience and
           a background in marketing and consumer psychology. I have designed for
           a range of companies, including a design studio, startups, as well as
-          a design agency. Currently, I am a product designer at Emergent Labs
-          (a design studio)
+          a design agency.
         </p>
         <p className="text-black md:w-[720px] font-[500]">
-          I'm Petra, a product designer with over two years of experience and a
-          background in marketing and consumer psychology. I have designed for a
-          range of companies, including a design studio, startups, as well as a
-          design agency. Currently, I am a product designer at Emergent Labs (a
-          design studio)
+          I'm Hikmot, a frontend engineer and an aspiring technical writer based in Ibadan, Nigeria. with over two years of experience and
+          a background in marketing and consumer psychology. I have designed for
+          a range of companies, including a design studio, startups, as well as
+          a design agency.
         </p>
         <p className="text-black md:w-[720px] font-[500]">
-          I'm Petra, a product designer with over two years of experience and a
-          background in marketing and consumer psychology. I have designed for a
-          range of companies, including a design studio, startups, as well as a
-          design agency. Currently, I am a product designer at Emergent Labs (a
-          design studio)
+          I'm Hikmot, a frontend engineer and an aspiring technical writer based in Ibadan, Nigeria. with over two years of experience and
+          a background in marketing and consumer psychology. I have designed for
+          a range of companies, including a design studio, startups, as well as
+          a design agency. 
         </p>
       </div>
 
