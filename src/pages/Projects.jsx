@@ -25,7 +25,7 @@ const Projects = () => {
             Figure out your ideal role in the world of tech
           </p>
           <div className="mt-20 flex items-center gap-3">
-            <div className="text-sm">Live</div>
+            <div className="text-sm"><a href="https://awaskill.vercel.app/">Live</a></div>
             <div className="flex">
               <FontAwesomeIcon icon="fa-solid fa-code-branch" />
               <p className="text-sm">Code</p>
