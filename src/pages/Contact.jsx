@@ -40,13 +40,6 @@ const Contact = () => {
 
           <div className="flex flex-col sm:flex-row gap-[20px] sm:gap-[50px] items-start sm:items-center">
             <a
-              href="https://instagram.com/hikmot"
-              target="_blank"
-              className="social_links"
-            >
-              Instagram
-            </a>
-            <a
               href="https://github.com/Hikmot-O"
               target="_blank"
               className="social_links"
@@ -59,6 +52,13 @@ const Contact = () => {
               className="social_links"
             >
               LinkedIn
+            </a>
+            <a
+              href="https://instagram.com/hikmot"
+              target="_blank"
+              className="social_links"
+            >
+              Instagram
             </a>
           </div>
         </div>

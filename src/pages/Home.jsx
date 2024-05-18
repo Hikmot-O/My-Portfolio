@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import NavBar from "../components/NavBar";
 
@@ -17,17 +17,21 @@ const Home = () => {
       </header> */}
 
       <div className="mt-[160px] sm:mt-[70px] flex flex-col items-center h-screen relative sm:static">
-      {/* Okunola, a frontend engineer. */}
-        <h2 className="text-center font-[500] text-[36px] sm:text-[56px] md:max-w-[630px]">Hi, I'm Hikmot.</h2>
-        <h2 className="text-center font-[500] text-[36px] sm:text-[56px]">A frontend engineer.</h2>
+        {/* Okunola, a frontend engineer. */}
+        <h2 className="text-center font-[500] text-[36px] sm:text-[56px] md:max-w-[630px]">
+          Hi, I'm Hikmot.
+        </h2>
+        <h2 className="text-center font-[500] text-[36px] sm:text-[56px]">
+          A frontend engineer.
+        </h2>
+        {/* //and reliable */}
         <p className="mt-[20px] text-center max-w-[550px]">
-          I build scalable and reliable web applications using frontend
-          technology. I am interested in user experience, accessibility and web
-          animations.
+          I build scalable web applications using frontend technology. I am
+          interested in user experience, accessibility and web animations.
         </p>
         <div className=" w-screen fixed bottom-[50px] flex items-center justify-center">
-        <NavBar />
-      </div>
+          <NavBar />
+        </div>
         {/* <div className="z-[10] absolute sm:static bottom-0  sm:mt-[150px] bg-slate-200 flex justify-center gap-12 items-center p-3 rounded-[16px]">
             <Link to='/home' className="bg-white px-[8px] py-[6px] text-center rounded-[14px]">Home</Link>
             <Link to='/projects' className="">Projects</Link>
