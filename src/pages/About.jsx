@@ -31,12 +31,11 @@ const About = () => {
       <div className="text-[17px] md:text-[17px] sm:text-2xl px-5 md:px-0 py-12 flex flex-col gap-[4rem] items-center">
         <p className="text-black md:w-[720px] font-[400]">
           I'm Hikmot, a frontend engineer and an aspiring technical writer based
-          in Ibadan, Nigeria. with over two years of experience and a background
-          in marketing and consumer psychology. I have designed for a range of
-          companies, including a design studio, startups, as well as a design
-          agency.
+          in Nigeria. I'm passionate about developing intuitive and visually
+          appealing digital experiences as well as solving problems. So if
+          you're in need of a frontend engineer that get's the job done, look no further!
         </p>
-        <p className="text-black md:w-[720px] font-[500]">
+        {/* <p className="text-black md:w-[720px] font-[500]">
           I'm Hikmot, a frontend engineer and an aspiring technical writer based
           in Ibadan, Nigeria. with over two years of experience and a background
           in marketing and consumer psychology. I have designed for a range of
@@ -49,7 +48,7 @@ const About = () => {
           in marketing and consumer psychology. I have designed for a range of
           companies, including a design studio, startups, as well as a design
           agency.
-        </p>
+        </p> */}
       </div>
 
       <div className="">
