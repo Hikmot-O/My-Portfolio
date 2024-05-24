@@ -17,6 +17,7 @@ const Home = () => {
         duration: 0.02,
       })
         .to("#home", {
+          delay: 0.3,
           opacity: 0,
           y: "+=30",
         })
