@@ -1,10 +1,22 @@
-import React from "react";
+import React, {useRef, useLayoutEffect} from "react";
+import { gsap } from "gsap";
 import Header from "../components/Header";
 import NavBar from "../components/NavBar";
 
 const About = () => {
+  // const comp = useRef(null)
+
+  // useLayoutEffect(()=>{
+  //   let ctx = gsap.context(()=>{
+  //     const t1 = gsap.timeline()
+
+  //   }, comp)
+
+  //   return () => ctx.revert()
+  // },[])
+
   return (
-    <section className=" bg-fuchsia-100  flex flex-col items-center w-sreen h-screen overflow-y-auto">
+    <section  className=" bg-fuchsia-100  flex flex-col items-center w-sreen h-screen overflow-y-auto">
       <div className="w-full px-5 pt-[30px] md:pt-10">
         <Header />
       </div>

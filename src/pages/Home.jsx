@@ -1,11 +1,38 @@
-import React from "react";
+import React, { useRef, useLayoutEffect } from "react";
+import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import NavBar from "../components/NavBar";
 
 const Home = () => {
+  const comp = useRef(null);
+
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      let t1 = gsap.timeline();
+
+      t1.to("#home", {
+        // scale: 1,
+        opacity: 0,
+        duration: 1.1,
+        y: "+=30",
+      }).from("#home", {
+        duration: 0.5,
+        scale: 0.1,
+        y: 0,
+        opacity: 0,
+        ease: "power1.out",
+      });
+    }, comp);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="bg-fuchsia-100 pt-[30px] only:sm:pt-10 p-5 flex flex-col items-center h-screen overflow-y-scroll">
+    <section
+      ref={comp}
+      className="bg-fuchsia-100 pt-[30px] only:sm:pt-10 p-5 flex flex-col items-center h-screen overflow-y-scroll"
+    >
       {/* <div className="animate-blob_1  absolute w-[200px] h-[200px] md:w-[400px] md:h-[400px] top-[100px] filter blur-3xl left-10 mix-blend-multiply bg-purple-300 rounded-full "></div>
       <div className="animate-blob absolute w-[200px] h-[200px] md:w-[400px] md:h-[400px] top-[100px] filter blur-3xl right-10 mix-blend-multiply bg-pink-300 rounded-full "></div> */}
       <Header />
@@ -16,7 +43,10 @@ const Home = () => {
         </button>
       </header> */}
 
-      <div className="mt-[160px] sm:mt-[70px] flex flex-col items-center h-screen relative sm:static">
+      <div
+        id="home"
+        className="mt-[160px] sm:mt-[70px] flex flex-col items-center h-screen relative sm:static"
+      >
         {/* Okunola, a frontend engineer. */}
         <h2 className="text-center font-[500] text-[36px] sm:text-[56px] md:max-w-[630px]">
           Hi, I'm Hikmot.

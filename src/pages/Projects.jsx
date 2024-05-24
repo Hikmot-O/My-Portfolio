@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useRef, useLayoutEffect } from "react";
+import { gsap } from "gsap";
 import Header from "../components/Header";
 import NavBar from "../components/NavBar";
 import CodeBranch from "../assets/icons/CodeBranch";
@@ -33,43 +33,64 @@ const projects = [
 ];
 
 const Projects = () => {
+  const comp = useRef(null);
+
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      const t1 = gsap.timeline();
+
+      t1.from("#projects", {
+        xPercent: 100,
+        // delay: 0.3,
+        duration: 0.6,
+        // stagger: 0.5,
+      });
+    }, comp);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className=" pt-[30px] md:pt-10 h-screen overflow-y-scroll bg-fuchsia-100">
-      <div className="px-5">
-        <Header />
-      </div>
+    <div ref={comp} className="overflow-x-hidden">
+      <section
+        id="projects"
+        className=" pt-[30px] md:pt-10 h-screen overflow-y-scroll overflow-x-hidden bg-fuchsia-100"
+      >
+        <div className="px-5">
+          <Header />
+        </div>
 
-      <h3 className="font-[600] text-center text-5xl md:text-[52px] pt-12 pb-20">
-        Projects
-      </h3>
+        <h3 className="font-[600] text-center text-5xl md:text-[52px] pt-12 pb-20">
+          Projects
+        </h3>
 
-      <div className="lg:px-[200px] px-5 grid-cols-1 grid md:grid-cols-2 gap-[15px] mx-auto">
-        {projects.map((project) => (
-          <div className="group project_card even:sm:translate-y-[70px]">
-            <div className="">
-              <p className="text-white font-[600] text-3xl mb-2">
-                {project.title}
-              </p>
-              <p className="uppercase text-xs">{project.tools}</p>
-              <p className="text-sm mt-4 text-[#777778]">{project.about}</p>
-            </div>
-            <div className="mt-20 flex items-center gap-5">
-              <div className="flex items-center gap-1">
-                <Eye />
-                <a href={project.live}>Live</a>
+        <div className="lg:px-[200px] px-5 grid-cols-1 grid md:grid-cols-2 gap-[15px] mx-auto">
+          {projects.map((project) => (
+            <div className="group project_card even:sm:translate-y-[70px]">
+              <div className="">
+                <p className="text-white font-[600] text-3xl mb-2">
+                  {project.title}
+                </p>
+                <p className="uppercase text-xs">{project.tools}</p>
+                <p className="text-sm mt-4 text-[#777778]">{project.about}</p>
               </div>
-              {project.code !== "" ? (
+              <div className="mt-20 flex items-center gap-5">
                 <div className="flex items-center gap-1">
-                  <CodeBranch />
-                  <a href={project.code} className="text-sm">
-                    Code
-                  </a>
+                  <Eye />
+                  <a href={project.live}>Live</a>
                 </div>
-              ) : (
-                ""
-              )}
-            </div>
-            {/* <div className="flex items-center gap-2.5 invisible group-hover:visible">
+                {project.code !== "" ? (
+                  <div className="flex items-center gap-1">
+                    <CodeBranch />
+                    <a href={project.code} className="text-sm">
+                      Code
+                    </a>
+                  </div>
+                ) : (
+                  ""
+                )}
+              </div>
+              {/* <div className="flex items-center gap-2.5 invisible group-hover:visible">
             <div className="Tools_card  ">Django</div>
             <div className="Tools_card">TailwindCss</div>
             <div className="Tools_card">TypeScript</div>
@@ -82,13 +103,14 @@ const Projects = () => {
               Project description and sha type a summary and make the space okay
             </p>
           </div> */}
-          </div>
-        ))}
-      </div>
-      <div className=" w-screen fixed bottom-[50px] flex items-center justify-center">
-        <NavBar />
-      </div>
-    </section>
+            </div>
+          ))}
+        </div>
+        <div className=" w-screen fixed bottom-[50px] flex items-center justify-center">
+          <NavBar />
+        </div>
+      </section>
+    </div>
   );
 };
 

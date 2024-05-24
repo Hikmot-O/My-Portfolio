@@ -10,6 +10,9 @@
         animation-delay: 4s;
     }
 }
+body{
+  background-color: black
+}
 
 /* hover:scale-105 translate-x-2 */
 .Tools_card {
