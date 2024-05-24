@@ -44,33 +44,26 @@ const Home = () => {
       </header> */}
 
       <div
-        id="home"
+        // id="home"
         className="mt-[160px] sm:mt-[70px] flex flex-col items-center h-screen relative sm:static"
       >
-        {/* Okunola, a frontend engineer. */}
-        <h2 className="text-center font-[500] text-[36px] sm:text-[56px] md:max-w-[630px]">
-          Hi, I'm Hikmot.
-        </h2>
-        <h2 className="text-center font-[500] text-[36px] sm:text-[56px]">
-          A frontend engineer.
-        </h2>
-        {/* //and reliable */}
-        <p className="mt-[20px] text-center max-w-[550px]">
-          I build scalable web applications using frontend technology. I am
-          interested in user experience, accessibility and web animations.
-        </p>
+        <div id="home" className="">
+          {/* Okunola, a frontend engineer. */}
+          <h2 className="text-center font-[500] text-[36px] sm:text-[56px] md:max-w-[630px]">
+            Hi, I'm Hikmot.
+          </h2>
+          <h2 className="text-center font-[500] text-[36px] sm:text-[56px]">
+            A frontend engineer.
+          </h2>
+          {/* //and reliable */}
+          <p className="mt-[20px] text-center max-w-[550px]">
+            I build scalable web applications using frontend technology. I am
+            interested in user experience, accessibility and web animations.
+          </p>
+        </div>
         <div className=" w-screen fixed bottom-[50px] flex items-center justify-center">
           <NavBar />
         </div>
-        {/* <div className="z-[10] absolute sm:static bottom-0  sm:mt-[150px] bg-slate-200 flex justify-center gap-12 items-center p-3 rounded-[16px]">
-            <Link to='/home' className="bg-white px-[8px] py-[6px] text-center rounded-[14px]">Home</Link>
-            <Link to='/projects' className="">Projects</Link>
-            <Link to='/about' className="">About</Link>
-            <Link to='/contact' className="">Contact</Link>
-        </div> */}
-        {/* <div className="w-full fixed bottom-[50px] flex items-center justify-center">
-        <NavBar />
-      </div> */}
       </div>
     </section>
   );
