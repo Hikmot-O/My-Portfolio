@@ -11,18 +11,24 @@ const Home = () => {
     let ctx = gsap.context(() => {
       let t1 = gsap.timeline();
 
-      t1.to("#home", {
-        // scale: 1,
-        opacity: 0,
-        duration: 1.1,
-        y: "+=30",
-      }).from("#home", {
-        duration: 0.5,
-        scale: 0.1,
-        y: 0,
-        opacity: 0,
-        ease: "power1.out",
-      });
+      t1.from("#home", {
+        scale: 1,
+        opacity: 1,
+        duration: 0.02,
+      })
+        .to("#home", {
+          opacity: 0,
+          y: "+=30",
+        })
+        .to("#home", {
+          scale: 0.3,
+          opacity: 0,
+          duration: 0.2,
+        })
+        .from("#home", {
+          scale: 0.3,
+          opacity: 0.2,
+        });
     }, comp);
 
     return () => ctx.revert();
